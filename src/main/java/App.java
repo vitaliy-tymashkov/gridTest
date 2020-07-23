@@ -7,6 +7,8 @@ public class App {
         //Add feature 2
         //Add feature 3
 
+        RestAdapter.withTest();
+
         System.out.println("STOP");
     }
 }
