@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) {
-        System.out.println("START");
+        System.out.println("START\n");
 
 
         //Add feature 1
@@ -9,6 +9,8 @@ public class App {
 
         RestAdapter.withTest();
 
-        System.out.println("STOP");
+        CollectionAccess.run();
+
+        System.out.println("\nSTOP");
     }
 }
