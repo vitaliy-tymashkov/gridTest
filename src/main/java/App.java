@@ -11,8 +11,16 @@ public class App {
         //Add feature 1
         //Add feature 2
         //Add feature 3
-        log.info("*************************** INFO1 **************************************");
         RestAdapter.withTest();
+
+        try{
+            log.info("*************************** INFO1 **************************************");
+            throw new Exception("Test exception");
+        } catch (Exception e) {
+            String text = "text";
+            log.error("*** ERROR MESSAGE = {} ***", text, e);
+            e.printStackTrace();
+        }
 
         System.out.println("STOP");
     }
